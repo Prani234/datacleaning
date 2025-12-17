@@ -20,7 +20,9 @@ if not hasattr(np, 'VisibleDeprecationWarning'):
     np.VisibleDeprecationWarning = DeprecationWarning
 
 # Configuration 
-GROQ_API_KEY = "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"  
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+
+# GROQ_API_KEY = "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"  
 #GEMINI_API_KEY = "AIzaSyDZlH8-uYeKK3p5Zh4GdVjrMj3uyTwlwbM"
 
 
